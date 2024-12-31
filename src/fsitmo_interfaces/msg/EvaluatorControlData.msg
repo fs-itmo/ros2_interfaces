@@ -1,0 +1,9 @@
+std_msgs/Header header
+
+fsitmo_interfaces/VehicleState vehicle_state
+fsitmo_interfaces/Point2d lookahead_point
+fsitmo_interfaces/Point2d closest_point
+
+float64 lookahead_velocity
+float64 closest_point_velocity
+float64 execution_time # ms

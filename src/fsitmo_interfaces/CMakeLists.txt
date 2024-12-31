@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(custom_interfaces)
+project(fsitmo_interfaces)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -33,7 +33,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/EvaluatorControlData.msg"
   "msg/YawPitchRoll.msg"
   "msg/ImuAcceleration.msg"
-  "msg/HydraulicLinePressure.msg"
+  # "msg/HydraulicLinePressure.msg"
   "msg/MasterLog.msg"
   "msg/MasterLog2.msg"
   "msg/Temperature.msg"

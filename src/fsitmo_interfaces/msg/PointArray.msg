@@ -1,0 +1,1 @@
+fsitmo_interfaces/Point2d[] points
