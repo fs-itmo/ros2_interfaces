@@ -10,12 +10,14 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Cone.msg"
-  "msg/ConeArray.msg"
+  "msg/ConesArray.msg"
   "msg/ControlCommand.msg"
   "msg/Point2d.msg"
+  "msg/Point3d.msg"
   "msg/PointArray.msg"
   "msg/VehicleState.msg"
   "msg/BoundingBox.msg"
@@ -37,7 +39,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MasterLog.msg"
   "msg/MasterLog2.msg"
   "msg/Temperature.msg"
-  DEPENDENCIES builtin_interfaces std_msgs 
+  DEPENDENCIES builtin_interfaces std_msgs geometry_msgs
 )
 
 ament_export_dependencies(rosidl_default_runtime)
